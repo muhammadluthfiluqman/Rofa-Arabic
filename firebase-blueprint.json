@@ -1,0 +1,133 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile information linked with Google account",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "description": "Firebase Auth UID"
+        },
+        "email": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 255,
+          "description": "User email address from Google account"
+        },
+        "displayName": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "description": "Display name of the user"
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Avatar URL from Google or fallback"
+        },
+        "username": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 30,
+          "pattern": "^[a-zA-Z0-9_]{3,30}$",
+          "description": "Unique username chosen during registration"
+        },
+        "passwordHash": {
+          "type": "string",
+          "minLength": 6,
+          "maxLength": 255,
+          "description": "Hashed password or PIN for RofaArabic account"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of user registration"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of profile update"
+        }
+      },
+      "required": ["uid", "email", "displayName", "username"]
+    },
+    "UserProgress": {
+      "title": "UserProgress",
+      "description": "Personal Arabic learning progress for the user",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "description": "Owner UID"
+        },
+        "completedThemes": {
+          "type": "array",
+          "description": "List of completed theme IDs"
+        },
+        "completedMufrodat": {
+          "type": "array",
+          "description": "List of mastered vocabulary IDs"
+        },
+        "completedIstima": {
+          "type": "array",
+          "description": "List of finished Istima story IDs"
+        },
+        "completedQiraah": {
+          "type": "array",
+          "description": "List of finished Qiraah IDs"
+        },
+        "completedQowaid": {
+          "type": "array",
+          "description": "List of finished Qowaid topic IDs"
+        },
+        "quizEasyScore": {
+          "type": "number",
+          "description": "Best score for easy level quiz"
+        },
+        "quizMediumScore": {
+          "type": "number",
+          "description": "Best score for medium level quiz"
+        },
+        "quizHardScore": {
+          "type": "number",
+          "description": "Best score for hard level quiz"
+        },
+        "gameHighScore": {
+          "type": "number",
+          "description": "Highest score achieved in word match game"
+        },
+        "totalXp": {
+          "type": "number",
+          "description": "Total learning experience points"
+        },
+        "studyStreakDays": {
+          "type": "number",
+          "description": "Consecutive days study streak"
+        },
+        "lastActiveDate": {
+          "type": "string",
+          "maxLength": 30,
+          "description": "Date string of last activity"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last progress sync"
+        }
+      },
+      "required": ["userId", "totalXp"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Stores user profile and account credentials"
+    },
+    "/users/{userId}/progress/data": {
+      "schema": "UserProgress",
+      "description": "Stores specific learning progress and quiz scores for a user"
+    }
+  }
+}

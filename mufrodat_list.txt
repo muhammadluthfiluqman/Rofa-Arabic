@@ -1,0 +1,270 @@
+kel-1|keluarga|Ayah
+kel-2|keluarga|Ibu
+kel-3|keluarga|Anak Laki-laki
+kel-4|keluarga|Anak Perempuan
+kel-5|keluarga|Kakak Laki-laki
+kel-6|keluarga|Kakak Perempuan
+kel-7|keluarga|Adik Laki-laki
+kel-8|keluarga|Adik Perempuan
+kel-9|keluarga|Kakek
+kel-10|keluarga|Nenek
+kel-11|keluarga|Paman (dari pihak Ayah)
+kel-12|keluarga|Bibi (dari pihak Ayah)
+kel-13|keluarga|Paman (dari pihak Ibu)
+kel-14|keluarga|Bibi (dari pihak Ibu)
+kel-15|keluarga|Cucu Laki-laki
+kel-16|keluarga|Cucu Perempuan
+kel-17|keluarga|Suami
+kel-18|keluarga|Istri
+kel-19|keluarga|Keluarga
+kel-20|keluarga|Kedua Orang Tua
+kel-21|keluarga|Sepupu Laki-laki
+kel-22|keluarga|Sepupu Perempuan
+kel-23|keluarga|Bayi / Balita (Laki-laki)
+kel-24|keluarga|Bayi / Balita (Perempuan)
+kel-25|keluarga|Ibu Rumah Tangga
+kel-26|keluarga|Kerabat / Famili
+kel-27|keluarga|Menantu / Ipar Laki-laki
+kel-28|keluarga|Menantu Perempuan
+kel-29|keluarga|Anak-anak (Jamak)
+kel-30|keluarga|Rumah Kakek
+mad-1|madrasah|Sekolah
+mad-2|madrasah|Kelas
+mad-3|madrasah|Perpustakaan
+mad-4|madrasah|Laboratorium
+mad-5|madrasah|Lapangan Olahraga
+mad-6|madrasah|Kantin Sekolah
+mad-7|madrasah|Musholla / Masjid Sekolah
+mad-8|madrasah|Buku Pelajaran
+mad-9|madrasah|Buku Catatan / Tulis
+mad-10|madrasah|Pena / Pulpen
+mad-11|madrasah|Pensil
+mad-12|madrasah|Penghapus Pensil
+mad-13|madrasah|Penggaris
+mad-14|madrasah|Rautan Pensil
+mad-15|madrasah|Tas Sekolah
+mad-16|madrasah|Kotak Pensil
+mad-17|madrasah|Papan Tulis
+mad-18|madrasah|Penghapus Papan Tulis
+mad-19|madrasah|Meja Belajar
+mad-20|madrasah|Kursi
+mad-21|madrasah|Lemari Buku / Loker
+mad-22|madrasah|Kalender
+mad-23|madrasah|Peta
+mad-24|madrasah|Kepala Sekolah
+mad-25|madrasah|Guru Laki-laki
+mad-26|madrasah|Guru Perempuan
+mad-27|madrasah|Siswa / Murid Laki-laki
+mad-28|madrasah|Siswi / Murid Perempuan
+mad-29|madrasah|Seragam Sekolah
+mad-30|madrasah|Bel Sekolah
+hob-1|hobi|Membaca Buku
+hob-2|hobi|Menulis Cerita / Puisi
+hob-3|hobi|Menggambar / Melukis
+hob-4|hobi|Fotografi / Memotret
+hob-5|hobi|Memasak Makanan
+hob-6|hobi|Menjahit Pakaian
+hob-7|hobi|Berenang
+hob-8|hobi|Sepak Bola
+hob-9|hobi|Bola Basket
+hob-10|hobi|Bola Voli
+hob-11|hobi|Bulu Tangkis (Badminton)
+hob-12|hobi|Tenis Meja (Pingpong)
+hob-13|hobi|Bersepeda
+hob-14|hobi|Berkuda
+hob-15|hobi|Memanah
+hob-16|hobi|Lari Santai (Jogging)
+hob-17|hobi|Memancing Ikan
+hob-18|hobi|Berkemah (Camping)
+hob-19|hobi|Mendaki Gunung
+hob-20|hobi|Bepergian (Traveling)
+hob-21|hobi|Menyanyi / Nasyid
+hob-22|hobi|Bermain Alat Musik
+hob-23|hobi|Kaligrafi Arab
+hob-24|hobi|Menghafal Al-Qur’an
+hob-25|hobi|Catur
+hob-26|hobi|Berkebun / Menanam Bunga
+hob-27|hobi|Mengoleksi Perangko (Filateli)
+hob-28|hobi|Menonton Televisi / Edukasi
+hob-29|hobi|Bermain Game Komputer
+hob-30|hobi|Seni Teater / Drama
+pro-1|profesi|Guru (Laki-laki)
+pro-2|profesi|Guru (Perempuan)
+pro-3|profesi|Dokter (Laki-laki)
+pro-4|profesi|Dokter (Perempuan)
+pro-5|profesi|Perawat Laki-laki
+pro-6|profesi|Perawat Perempuan
+pro-7|profesi|Apoteker
+pro-8|profesi|Insinyur / Arsitek
+pro-9|profesi|Polisi
+pro-10|profesi|Tentara / Prajurit
+pro-11|profesi|Pilot
+pro-12|profesi|Pramugari
+pro-13|profesi|Sopir / Pengemudi
+pro-14|profesi|Kapten Kapal / Nakhoda
+pro-15|profesi|Petani (Laki-laki)
+pro-16|profesi|Petani (Perempuan)
+pro-17|profesi|Nelayan
+pro-18|profesi|Pedagang / Pengusaha
+pro-19|profesi|Pembuat Roti (Baker)
+pro-20|profesi|Koki / Juru Masak
+pro-21|profesi|Penjahit Pakaian
+pro-22|profesi|Tukang Kayu
+pro-23|profesi|Pandai Besi
+pro-24|profesi|Pelukis
+pro-25|profesi|Wartawan / Jurnalis
+pro-26|profesi|Hakim
+pro-27|profesi|Pengacara / Advokat
+pro-28|profesi|Imam Masjid / Pemimpin
+pro-29|profesi|Presiden / Ketua
+pro-30|profesi|Menteri
+tra-1|transportasi|Mobil Pribadi
+tra-2|transportasi|Bus Umum
+tra-3|transportasi|Sepeda Onthel
+tra-4|transportasi|Sepeda Motor
+tra-5|transportasi|Kereta Api
+tra-6|transportasi|Taksi
+tra-7|transportasi|Truk Pengangkut
+tra-8|transportasi|Mobil Ambulans
+tra-9|transportasi|Mobil Pemadam Kebakaran
+tra-10|transportasi|Mobil Patroli Polisi
+tra-11|transportasi|Kereta Kuda / Delman
+tra-12|transportasi|Pesawat Terbang
+tra-13|transportasi|Helikopter
+tra-14|transportasi|Roket Luar Angkasa
+tra-15|transportasi|Balon Udara
+tra-16|transportasi|Kapal Laut Besar
+tra-17|transportasi|Perahu Kecil / Sampan
+tra-18|transportasi|Kapal Selam
+tra-19|transportasi|Stasiun Kereta Api
+tra-20|transportasi|Halte Bus
+tra-21|transportasi|Bandara Udara
+tra-22|transportasi|Pelabuhan Kapal
+tra-23|transportasi|Tiket Perjalanan
+tra-24|transportasi|Paspor
+tra-25|transportasi|Lampu Lalu Lintas
+tra-26|transportasi|Jalan Raya
+tra-27|transportasi|Jembatan Penyeberangan
+tra-28|transportasi|Terowongan Bawah Tanah
+tra-29|transportasi|Cepat (Laju Kendaraan)
+tra-30|transportasi|Lambat (Laju Kendaraan)
+war-1|warna|Putih (Mudzakkar)
+war-2|warna|Putih (Muannats)
+war-3|warna|Hitam (Mudzakkar)
+war-4|warna|Hitam (Muannats)
+war-5|warna|Merah (Mudzakkar)
+war-6|warna|Merah (Muannats)
+war-7|warna|Biru (Mudzakkar)
+war-8|warna|Biru (Muannats)
+war-9|warna|Hijau (Mudzakkar)
+war-10|warna|Hijau (Muannats)
+war-11|warna|Kuning (Mudzakkar)
+war-12|warna|Kuning (Muannats)
+war-13|warna|Oranye / Jingga (Mudzakkar)
+war-14|warna|Oranye / Jingga (Muannats)
+war-15|warna|Cokelat (Mudzakkar)
+war-16|warna|Cokelat (Muannats)
+war-17|warna|Abu-abu (Mudzakkar)
+war-18|warna|Abu-abu (Muannats)
+war-19|warna|Merah Muda / Pink (Mudzakkar)
+war-20|warna|Merah Muda / Pink (Muannats)
+war-21|warna|Ungu (Mudzakkar)
+war-22|warna|Ungu (Muannats)
+war-23|warna|Warna Keemasan
+war-24|warna|Warna Perak
+war-25|warna|Warna (Tunggal)
+war-26|warna|Warna-warna (Jamak)
+war-27|warna|Muda / Terang (misal Hijau Muda)
+war-28|warna|Tua / Gelap (misal Biru Tua)
+war-29|warna|Pelangi
+war-30|warna|Bening / Transparan
+keg-1|kegiatan|Bangun Tidur
+keg-2|kegiatan|Berwudhu
+keg-3|kegiatan|Salat Subuh
+keg-4|kegiatan|Membaca Al-Qur’an
+keg-5|kegiatan|Mandi
+keg-6|kegiatan|Menggosok Gigi
+keg-7|kegiatan|Memakai Pakaian / Seragam
+keg-8|kegiatan|Makan Pagi (Sarapan)
+keg-9|kegiatan|Minum Susu
+keg-10|kegiatan|Berpamitan kepada Orang Tua
+keg-11|kegiatan|Pergi ke Sekolah
+keg-12|kegiatan|Naik Bus Sekolah
+keg-13|kegiatan|Masuk ke Ruang Kelas
+keg-14|kegiatan|Mendengarkan Penjelasan Guru
+keg-15|kegiatan|Menulis Materi Pelajaran
+keg-16|kegiatan|Mengajukan Pertanyaan
+keg-17|kegiatan|Istirahat Jam Belajar
+keg-18|kegiatan|Bermain Bersama Sahabat
+keg-19|kegiatan|Pulang ke Rumah
+keg-20|kegiatan|Makan Siang Bersama
+keg-21|kegiatan|Tidur Siang Sebentar
+keg-22|kegiatan|Menjalankan Salat Ashar
+keg-23|kegiatan|Membantu Pekerjaan Ibu
+keg-24|kegiatan|Mengulang & Belajar Pelajaran
+keg-25|kegiatan|Mengerjakan Pekerjaan Rumah (PR)
+keg-26|kegiatan|Salat Maghrib Berjamaah
+keg-27|kegiatan|Makan Malam Bersama Keluarga
+keg-28|kegiatan|Salat Isya
+keg-29|kegiatan|Mematikan Lampu Kamar
+keg-30|kegiatan|Tidur Tepat Waktu (Lebih Awal)
+tub-1|tubuh|Kepala
+tub-2|tubuh|Rambut
+tub-3|tubuh|Wajah / Muka
+tub-4|tubuh|Dahi / Jidat
+tub-5|tubuh|Mata
+tub-6|tubuh|Alis Mata
+tub-7|tubuh|Hidung
+tub-8|tubuh|Mulut
+tub-9|tubuh|Bibir
+tub-10|tubuh|Lidah
+tub-11|tubuh|Gigi
+tub-12|tubuh|Telinga
+tub-13|tubuh|Pipi
+tub-14|tubuh|Dagu
+tub-15|tubuh|Leher
+tub-16|tubuh|Pundak / Bahu
+tub-17|tubuh|Dada
+tub-18|tubuh|Perut
+tub-19|tubuh|Punggung
+tub-20|tubuh|Tangan
+tub-21|tubuh|Siku Tangan
+tub-22|tubuh|Telapak Tangan
+tub-23|tubuh|Jari Tangan
+tub-24|tubuh|Kuku
+tub-25|tubuh|Ibu Jari (Jempol)
+tub-26|tubuh|Jari Telunjuk
+tub-27|tubuh|Kaki
+tub-28|tubuh|Lutut Kaki
+tub-29|tubuh|Betis Kaki
+tub-30|tubuh|Telapak Kaki
+wak-1|waktu|Jam / Pukul
+wak-2|waktu|Menit
+wak-3|waktu|Detik
+wak-4|waktu|Setengah Jam (30 Menit)
+wak-5|waktu|Seperempat Jam (15 Menit)
+wak-6|waktu|Pukul Satu Tepat
+wak-7|waktu|Pukul Dua Tepat
+wak-8|waktu|Pukul Tiga Tepat
+wak-9|waktu|Pukul Empat Tepat
+wak-10|waktu|Pukul Lima Tepat
+wak-11|waktu|Pukul Enam Tepat
+wak-12|waktu|Pukul Tujuh Tepat
+wak-13|waktu|Pukul Delapan Tepat
+wak-14|waktu|Pukul Sembilan Tepat
+wak-15|waktu|Pukul Sepuluh Tepat
+wak-16|waktu|Pukul Sebelas Tepat
+wak-17|waktu|Pukul Dua Belas Tepat
+wak-18|waktu|Pagi Hari
+wak-19|waktu|Siang Hari
+wak-20|waktu|Sore Hari
+wak-21|waktu|Malam Hari
+wak-22|waktu|Sekarang
+wak-23|waktu|Kemarin
+wak-24|waktu|Hari Ini
+wak-25|waktu|Besok
+wak-26|waktu|Sebelum
+wak-27|waktu|Sesudah / Setelah
+wak-28|waktu|Tepat (Jam Pas)
+wak-29|waktu|Lebih (contoh: Jam 7 Lebih 15 Menit)
+wak-30|waktu|Kurang (contoh: Jam 8 Kurang 10 Menit)

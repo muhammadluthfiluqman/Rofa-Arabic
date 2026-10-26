@@ -1,0 +1,8 @@
+{
+  "name": "RofaArabic FIX",
+  "description": "Media pembelajaran bahasa Arab berbasis website yang interaktif dan menyenangkan untuk siswa SMP/MTs (12-15 tahun). Dilengkapi Mufrodat, Istima\u0027, Qira\u0027ah, Qowaid, Latihan Soal 3 level, dan Game Edukatif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

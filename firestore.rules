@@ -1,0 +1,117 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isVerified() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // Validation for UserProfile
+    function isValidUserProfile(data, userId) {
+      return data.uid == userId &&
+        data.uid == request.auth.uid &&
+        data.email is string && data.email.size() >= 3 && data.email.size() <= 255 &&
+        data.displayName is string && data.displayName.size() >= 1 && data.displayName.size() <= 100 &&
+        data.username is string && data.username.size() >= 3 && data.username.size() <= 30 &&
+        data.username.matches('^[a-zA-Z0-9_]{3,30}$') &&
+        (!('passwordHash' in data) || (data.passwordHash is string && data.passwordHash.size() <= 255)) &&
+        (!('photoURL' in data) || (data.photoURL is string && data.photoURL.size() <= 1000));
+    }
+
+    // Validation for UserProgress
+    function isValidUserProgress(data, userId) {
+      return data.userId == userId &&
+        data.userId == request.auth.uid &&
+        data.totalXp is number && data.totalXp >= 0 &&
+        (!('completedThemes' in data) || (data.completedThemes is list && data.completedThemes.size() <= 50)) &&
+        (!('completedMufrodat' in data) || (data.completedMufrodat is list && data.completedMufrodat.size() <= 500)) &&
+        (!('completedIstima' in data) || (data.completedIstima is list && data.completedIstima.size() <= 100)) &&
+        (!('completedQiraah' in data) || (data.completedQiraah is list && data.completedQiraah.size() <= 100)) &&
+        (!('completedQowaid' in data) || (data.completedQowaid is list && data.completedQowaid.size() <= 100)) &&
+        (!('quizEasyScore' in data) || data.quizEasyScore is number) &&
+        (!('quizMediumScore' in data) || data.quizMediumScore is number) &&
+        (!('quizHardScore' in data) || data.quizHardScore is number) &&
+        (!('gameHighScore' in data) || data.gameHighScore is number) &&
+        (!('studyStreakDays' in data) || data.studyStreakDays is number);
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      allow get: if isOwner(userId);
+      allow list: if false;
+
+      allow create: if isOwner(userId) &&
+        isVerified() &&
+        isValidId(userId) &&
+        incoming().keys().hasAll(['uid', 'email', 'displayName', 'username']) &&
+        isValidUserProfile(incoming(), userId);
+
+      allow update: if isOwner(userId) &&
+        isValidId(userId) &&
+        isValidUserProfile(incoming(), userId) &&
+        incoming().uid == existing().uid &&
+        incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'photoURL', 'username', 'passwordHash', 'updatedAt']);
+
+      allow delete: if isOwner(userId) && isValidId(userId);
+
+      // User Progress Subcollection
+      match /progress/{progressDoc} {
+        allow get: if isOwner(userId);
+        allow list: if isOwner(userId);
+
+        allow create: if isOwner(userId) &&
+          isValidId(userId) &&
+          incoming().keys().hasAll(['userId', 'totalXp']) &&
+          isValidUserProgress(incoming(), userId);
+
+        allow update: if isOwner(userId) &&
+          isValidId(userId) &&
+          isValidUserProgress(incoming(), userId) &&
+          incoming().userId == existing().userId &&
+          incoming().diff(existing()).affectedKeys().hasOnly([
+            'completedThemes',
+            'completedMufrodat',
+            'completedIstima',
+            'completedQiraah',
+            'completedQowaid',
+            'quizEasyScore',
+            'quizMediumScore',
+            'quizHardScore',
+            'gameHighScore',
+            'totalXp',
+            'studyStreakDays',
+            'lastActiveDate',
+            'updatedAt'
+          ]);
+
+        allow delete: if isOwner(userId) && isValidId(userId);
+      }
+    }
+  }
+}
